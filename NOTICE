@@ -1,0 +1,16 @@
+THE GEOMETRIC LADDER — credits and provenance
+
+The demo's digits: Alpaydin, E., & Kaynak, C. (1998). Optical Recognition of Handwritten Digits. UCI Machine Learning
+Repository, DOI 10.24432/C50P49, CC BY 4.0. vendor/settling-cell/data/optdigits.tes is the UCI file, unchanged.
+The rungs also use UCI Semeion and the MNIST database (Y. LeCun, C. Cortes and C. J. C. Burges, CC BY-SA 3.0), credited
+in their own repositories.
+
+Vendored byte for byte (pinned in vendor/SOURCES.json): Rung 1 sjgant80-hub/settling-cell (the cell kernel and its
+seal-2 cell), Rung 4 sjgant80-hub/mesh-share (the evolved node). The cell's energy follows Hopfield (1982) and
+Krotov & Hopfield (2016).
+
+The rungs: sjgant80-hub/settling-cell, code-rsi, hybrid-gate, mesh-share, geometric-defence, nested-fabric, chip-immune.
+
+Powered by the Konomi architecture, created by Thomas Frumkin.
+
+vendor/liveware/: from sjgant80-hub/liveware at 48205c7. This repository's own code is MIT licensed.

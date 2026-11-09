@@ -1,0 +1,9 @@
+{
+ "kernel": "src/ladder.mjs",
+ "witness": "v0.6",
+ "total": 8,
+ "killed": 8,
+ "survived": 0,
+ "ignored": 0,
+ "clean": true
+}
