@@ -72,7 +72,7 @@ footer p+p{margin-top:6px}
 </head>
 <body>
 <nav class="top" aria-label="Sections">
-  <a href="#rungs">The seven rungs</a><a href="#watch">Watch it settle</a><a href="#finding">What the ladder found</a><a href="#start">Start here</a><a href="#how">How it works</a><a href="#blueprint">Blueprint</a><a href="#adoption">Adoption</a><a href="#paper">White paper</a><a href="#business">For business</a>
+  <a href="#rungs">The seven rungs</a><a href="#watch">Watch it settle</a><a href="#finding">What the ladder found</a><a href="#words">Words</a><a href="#start">Start here</a><a href="#how">How it works</a><a href="#blueprint">Blueprint</a><a href="#adoption">Adoption</a><a href="#paper">White paper</a><a href="#business">For business</a>
 </nav>
 <header class="hero">
   <h1>The geometric ladder: seven tests of computing by settling.</h1>
@@ -104,6 +104,19 @@ footer p+p{margin-top:6px}
   <h2>What the ladder found</h2>
   <p id="finding-text">…</p>
   <ul id="finding-list"></ul>
+</section>
+<section id="words">
+  <h2>Words on this page</h2>
+  <div class="tablewrap"><table>
+    <tr><td><b>Settle</b></td><td>To read an input, the cell flips its bits one at a time, each flip only if it makes the input match the cell's stored patterns better, until no flip helps. The class of the patterns it ends up nearest is the answer.</td></tr>
+    <tr><td><b>Cell, shape</b></td><td>The cell is the small reader; its shape is what it reads with: a couple of hundred stored digit patterns and two numbers that set how widely each pattern pulls.</td></tr>
+    <tr><td><b>Fit</b></td><td>How strongly the settled state matches the stored patterns. Zero fit means it matches nothing.</td></tr>
+    <tr><td><b>One-step read</b></td><td>Reading the same input with the same shape without settling: just which stored patterns it is nearest as it arrives. The fair baseline for settling.</td></tr>
+    <tr><td><b>Model-free</b></td><td>No neural network is trained. Code proposes small changes and keeps one only if it wins a fresh exam.</td></tr>
+    <tr><td><b>Held-out</b></td><td>Data kept aside and read once, after everything is frozen, so the result cannot be tuned to it.</td></tr>
+    <tr><td><b>Seal</b></td><td>Committing the claims (seal 1), then the frozen results (seal 2), to the public record before the held-out data is read.</td></tr>
+    <tr><td><b>Mutation gate</b></td><td>A tool (witness) that breaks the code in small ways, one at a time, and checks the tests catch every break. Clean means every one was caught, with none excused.</td></tr>
+  </table></div>
 </section>
 <section id="start">
   <h2>Start here</h2>
@@ -153,6 +166,15 @@ footer p+p{margin-top:6px}
     <div class="card"><div class="k">For engineering</div><p style="margin-top:6px">Each rung is a small, pinned, re-derivable repository: seal, build, freeze, read once, gate. Fork one rung and run its <code>--check</code> to see the whole method.</p></div>
     <div class="card"><div class="k">For research</div><p style="margin-top:6px">The failures are the finding. Settling, as a computation, kept losing to reading the same shape in one step. That is published, with the code to re-run it.</p></div>
   </div>
+  <h3>A pilot, step by step</h3>
+  <ol>
+    <li>Pick one task you do by hand that has a right answer you can check later.</li>
+    <li>Write down the bars it must meet before anything is built, and seal them.</li>
+    <li>Build on your past data only; keep a held-out slice untouched.</li>
+    <li>Freeze it, then judge it once on the held-out slice. The fee is due only if it beat your current way.</li>
+    <li>Run it beside your current process, deciding nothing, before it is trusted with anything.</li>
+  </ol>
+  <p class="muted">What the rungs run on: Node.js 20 or a current browser. No GPU, no cloud service, no model download.</p>
 </section>
 <section id="paper">
   <h2>White paper: what seven sealed builds say about computing by settling</h2>
