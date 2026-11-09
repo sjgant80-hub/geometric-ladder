@@ -21,7 +21,7 @@ failure. The live page reads every rung's committed verdicts and lets you watch 
 
 **What the ladder found.** The structure around the cell held: signatures checked on raw bytes, each receiver's own exam
 before any change, exact code behind the fuzzy reader, signed sharing, a layer that fails safe. The settle itself, as a
-computation, kept losing information: reading the same shape in one step did at least as well (Rungs 1, 2), and an attack
+computation, kept losing information: settling never reliably beat reading the same shape in one step (Rungs 1, 2), and an attack
 that settles into a real digit's well looks, at the settled state, like that digit (Rungs 5, 7).
 
 ## Re-derive it

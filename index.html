@@ -166,7 +166,7 @@ footer p+p{margin-top:6px}
   <div class="cards">
     <div class="card"><div class="k">For a business</div><p style="margin-top:6px">The parts that held are the trust machinery: signed sharing checked on raw bytes, a receiver's own exam before any change, exact code behind a fuzzy reader, and a fail-safe layer that never stops the device. Those carry over to any fleet of sites or devices.</p></div>
     <div class="card"><div class="k">For engineering</div><p style="margin-top:6px">Each rung is a small, pinned, re-derivable repository: seal, build, freeze, read once, gate. Fork one rung and run its <code>--check</code> to see the whole method.</p></div>
-    <div class="card"><div class="k">For research</div><p style="margin-top:6px">The failures are the finding. Settling, as a computation, kept losing to reading the same shape in one step. That is published, with the code to re-run it.</p></div>
+    <div class="card"><div class="k">For research</div><p style="margin-top:6px">The failures are the finding. Settling, as a computation, never reliably beat reading the same shape in one step. That is published, with the code to re-run it.</p></div>
   </div>
   <h3>A pilot, step by step</h3>
   <ol>
@@ -216,7 +216,7 @@ footer p+p{margin-top:6px}
   <p id="c-board"></p>
   <h3>Questions buyers ask</h3>
   <div class="tablewrap"><table>
-    <tr><td><b>Does settling beat a normal model?</b></td><td>Not on this evidence. On every rung that tested it, reading the same shape in one step did at least as well as settling, and a nearest-neighbour baseline beat the settling cell on Rung 1. That is published on the rungs' pages.</td></tr>
+    <tr><td><b>Does settling beat a normal model?</b></td><td>Not on this evidence. On both rungs that tested it, settling never reliably beat reading the same shape in one step (on Rung 1 the one-step read was better clean and noisy; on Rung 2 it was better clean, and under noise the two were within error), and a nearest-neighbour baseline beat the settling cell on Rung 1. That is published on the rungs' pages.</td></tr>
     <tr><td><b>Then what is it good for?</b></td><td>The machinery around it held: signed sharing, a receiver's own exam, exact code behind a fuzzy reader, a fail-safe layer. Those apply to whatever reader you use.</td></tr>
     <tr><td><b>How would we test it on our own data?</b></td><td>Seal the bars, build on your training data, freeze, and judge once on held-out data. The fee is due only if it beat your current way.</td></tr>
     <tr><td><b>Has it run on real hardware?</b></td><td>Not yet. Rung 7 ran on an emulator held to microcontroller rules, and says so on every number. The next step is running the same record on a Raspberry Pi; no date is promised until a board is in hand. Power use is not measured.</td></tr>
