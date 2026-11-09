@@ -108,7 +108,9 @@ footer p+p{margin-top:6px}
 <section id="words">
   <h2>Words on this page</h2>
   <div class="tablewrap"><table>
+    <tr><td><b>Held, failed, not tested</b></td><td>Each claim had a bar written down before any code. Held: the measured number met its bar. Failed: it did not, and the claim is kept on the record. Not tested: it could not be run here (only Rung 7's real-chip claim).</td></tr>
     <tr><td><b>Settle</b></td><td>To read an input, the cell flips its bits one at a time, each flip only if it makes the input match the cell's stored patterns better, until no flip helps. The class of the patterns it ends up nearest is the answer.</td></tr>
+    <tr><td><b>Fuzzy reader, exact code</b></td><td>The fuzzy reader is the cell: it reads messy handwriting and can be wrong. Exact code is ordinary tested logic, such as a check digit, that is either right or wrong and never guesses (Rung 3).</td></tr>
     <tr><td><b>Cell, shape</b></td><td>The cell is the small reader; its shape is what it reads with: a couple of hundred stored digit patterns and two numbers that set how widely each pattern pulls.</td></tr>
     <tr><td><b>Fit</b></td><td>How strongly the settled state matches the stored patterns. Zero fit means it matches nothing.</td></tr>
     <tr><td><b>One-step read</b></td><td>Reading the same input with the same shape without settling: just which stored patterns it is nearest as it arrives. The fair baseline for settling.</td></tr>
@@ -217,7 +219,8 @@ footer p+p{margin-top:6px}
     <tr><td><b>Does settling beat a normal model?</b></td><td>Not on this evidence. On every rung that tested it, reading the same shape in one step did at least as well as settling, and a nearest-neighbour baseline beat the settling cell on Rung 1. That is published on the rungs' pages.</td></tr>
     <tr><td><b>Then what is it good for?</b></td><td>The machinery around it held: signed sharing, a receiver's own exam, exact code behind a fuzzy reader, a fail-safe layer. Those apply to whatever reader you use.</td></tr>
     <tr><td><b>How would we test it on our own data?</b></td><td>Seal the bars, build on your training data, freeze, and judge once on held-out data. The fee is due only if it beat your current way.</td></tr>
-    <tr><td><b>Has it run on real hardware?</b></td><td>Not yet. Rung 7 ran on an emulator held to microcontroller rules, and says so on every number.</td></tr>
+    <tr><td><b>Has it run on real hardware?</b></td><td>Not yet. Rung 7 ran on an emulator held to microcontroller rules, and says so on every number. The next step is running the same record on a Raspberry Pi; no date is promised until a board is in hand. Power use is not measured.</td></tr>
+    <tr><td><b>Where does our data go?</b></td><td>Nowhere. Every rung runs on your own machine or in your browser tab, and each page's security policy blocks connections to anywhere but its own files. Nothing is sent to us. As with any in-house tool, your data-protection duties stay with you.</td></tr>
     <tr><td><b>Who has done this for a client? Is it certified?</b></td><td>No client case study is published yet, and no certification is claimed. Every record re-derives from pinned files.</td></tr>
   </table></div>
   <p style="margin-top:10px">Supplied by <a href="https://www.ai-nativesolutions.com" rel="noopener">AI Native Solutions</a>; contact through that site. Support, SLA, warranty and liability are agreed per deployment. The code is MIT.</p>
